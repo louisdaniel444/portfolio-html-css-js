@@ -1,0 +1,36 @@
+
+
+*
+ {
+ color:black;
+  font-family: "Playwrite AU SA", cursive;
+ 
+}
+
+h1{
+  color: darkgreen;
+  text-align: center;
+}
+
+img {
+width: 100%;
+}
+
+
+.blocmain{
+  display: block;
+  white-space:nowrap ;
+width: 100%;
+}
+
+.blocmain img,
+.blocmain p{
+  display: inline-block;
+  white-space: normal;
+  margin: auto;
+width: 45%;
+}
+
+.blocmain p{
+  text-align: justify;
+}
