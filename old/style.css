@@ -1,0 +1,66 @@
+
+
+*
+ {
+ color:black;
+  font-family: "Playwrite AU SA", cursive;
+ 
+}
+
+h1{
+  color: darkgreen;
+  text-align: center;
+}
+
+img {
+width: 100%;
+}
+
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+  display:flex;
+  flex-direction: column;
+  gap:20px;
+}
+main{
+  display:flex;
+  flex-direction: column;
+  background-color: rgb(197, 216, 179);
+  gap:20px;
+  padding:25px 50px;
+}
+header{
+background-color: blue;
+
+}
+footer{
+  background-color:blanchedalmond;
+  display: flex;
+  justify-content:center;
+}
+
+body{
+  background-color: beige;
+}
+.blocmain{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.blocmain img,
+.blocmain p{
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex: 1 1 200px;
+
+}
+
+.blocmain p{
+  text-align: justify;
+}

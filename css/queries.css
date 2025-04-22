@@ -1,0 +1,26 @@
+/* Media Queries pour le responsive */
+/* 768px = tablette */
+@media (min-width: 768px) {
+  .container-menu-mobile {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .text-container {
+    text-align: left;
+    flex: 1;
+  }
+
+  .image-container {
+    margin: 0;
+  }
+}
