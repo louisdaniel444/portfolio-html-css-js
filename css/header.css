@@ -64,7 +64,12 @@ nav {
   list-style: none;
   gap: 2rem;
 }
-
+.menu-mobile.open{
+display: flex;
+}
+.btn-close-menu-mobile.visible {
+  display: block;
+}
 .menu {
   display: none;
   list-style: none;
