@@ -1,25 +1,50 @@
 /* Media Queries pour le responsive */
 /* 768px = tablette */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+
+  /* Styles du conteneur du menu mobile */
   .container-menu-mobile {
     display: none;
   }
 
+  /* Styles du menu */
   .menu {
     display: flex;
   }
-
+/* 
+  section:not(.presentation)  .container{
+  max-width: 600px;
+  }
+ */
+  /* Styles du conteneur */
   .container {
     flex-direction: row;
     align-items: center;
+    padding: 0 3vw;    
     gap: 4rem;
+    height: 50vh;
   }
-
+ 
+section:not(.reseau-sociaux) .container{
+  height: 100vh;
+}
+  /* Styles du conteneur pour le texte */
   .text-container {
     text-align: left;
     flex: 1;
+    max-width: 70%;
   }
 
+ section:not(.presentation)  .text-container {
+    text-align: right;
+    flex: 1;
+  }
+
+  .social-links img {
+    width: 128px;    
+  }
+
+  /* Styles du conteneur pour l'image */
   .image-container {
     margin: 0;
   }

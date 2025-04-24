@@ -1,34 +1,75 @@
-/* Section Présentation */
+/* Section PrÃ©sentation */
 .presentation {
-  padding: 6rem 1rem 2rem;
+  
   background-color: #f8f9fa;
 }
 
+/* Styles du conteneur */
 .container {
-  max-width: 1200px;
+  max-width: 1200px; 
+  height: 75vh;
   margin: 0 auto;
+  padding: 0 5vw;   
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
 }
 
+section:not(.reseau-sociaux) .container{
+  height: 100vh;
+}
+
+/* Styles du conteneur pour l'image */
 .image-container {
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
 }
 
+/* Styles de l'image */
 .image-container img {
   width: 100%;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Styles du conteneur pour le texte */
 .text-container {
   text-align: center;
+ 
 }
 
+/* Styles du titre */
 .text-container h1 {
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: #2c3e50;
+}
+
+/* Styles du titre */
+.text-container h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+/* Styles du conteneur pour les liens sociaux */
+.social-links {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+/* Styles des images des liens sociaux */
+.social-links img {
+  width: 64px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+/* Styles des images des liens sociaux lorsqu'ils sont survolés */
+.social-links img:hover {
+  transform: scale(1.1);
 }

@@ -5,17 +5,3 @@ footer {
   padding: 2rem 1rem;
   text-align: center;
 }
-
-.social-links {
-  margin-bottom: 1rem;
-}
-
-.social-links img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s;
-}
-
-.social-links img:hover {
-  transform: scale(1.1);
-}
