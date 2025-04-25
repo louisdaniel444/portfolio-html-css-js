@@ -12,15 +12,16 @@
   <link rel="stylesheet" href="css/menu-mobile.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/formulaire.css">
   <link rel="stylesheet" href="css/queries.css">
   <!-- Titre de la page -->
   <title>Portfolio Immersion</title>
   <!-- Script JS -->
-  <script src="JS/script.js"></script>
   <!-- Script JS pour l'explication du cours Base JS -->
   <script src="JS/explication-cours.js"></script>
   <!-- Script JS pour le menu mobile -->
   <script src="JS/menu-mobile.js"></script>
+  <script src="JS/formulaire.js"></script>
 </head>
 
 <body>
@@ -99,12 +100,68 @@
   </header>
 
   <!-- Corps de la page -->
-   
-  <main>
-    <div class="container">
 
-    </div>
+  <main class="main-contact">
 
+    <section class="form-contact">
+      <div class="container">
+
+        <div class="text-container">
+          <h2>
+            Besoin d&apos;un dev en devenir ?
+          </h2>
+          <p>
+            Je suis encore en immersion, mais j&apos;ai déjà les mains dans le code. Si tu veux discuter projet, tech ou
+            juste échanger sur mon apprentissage, c&apos;est ici que ça se passe.
+
+          </p>
+        </div>
+
+        <form class="formulaire" action="/ma-page-de-traitement" method="post">
+          <ul>
+            <li>
+              <label for="name">Nom&nbsp;</label>
+              <input type="text" id="name" name="user_name" placeholder="Votre Nom" required />
+            </li>
+            <li>
+              <label for="mail">E-mail&nbsp;</label>
+              <input type="email" id="mail" name="user_mail" placeholder="votre@email.com" required />
+            </li>
+            <li>
+              <label for="msg">Message&nbsp;</label>
+              <textarea id="msg" name="user_message" placeholder="Ecrivez-votre message ici"></textarea>
+            </li>
+          </ul>
+          <div class="button-form">
+            <button type="submit">Envoyer le message</button>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+    <section class="reseau-sociaux">
+      <div class="container">
+        <div class="text-container">
+          <h2>
+            Du code, des tests, des débuts
+          </h2>
+          <p>
+            Avant même ma formation, je mets les mains dans le code ! Mon GitHub, c'est l'endroit où tout commence :
+            projets d'immersion, expérimentations, premières lignes de dev.
+          </p>
+        </div>
+
+        <!-- Conteneur pour les liens sociaux -->
+        <div class="social-links">
+          <!-- Lien pour accéder au GitHub -->
+          <a href="https://github.com/louisdaniel444/portfolio-html-css-js" target="_blank">
+            <!-- Image pour le GitHub -->
+            <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+    </section> 
   </main>
 
   <!-- Pied de page -->
